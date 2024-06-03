@@ -1,0 +1,28 @@
+services:
+
+  komiser:
+    image: komiser
+    build: .
+    container_name: komiser
+    env_file:
+      - .env
+    ports:
+      - "3000:3000" 
+    volumes:
+      - komiser-data:/data
+    networks:
+      - komiser-network
+
+  envvars:
+    image: flemay/envvars:latest
+    env_file: .env
+    volumes:
+      - .:/work
+    working_dir: /work
+
+volumes:
+  komiser-data:
+
+networks:
+  komiser-network:
+    driver: bridge
