@@ -1,7 +1,7 @@
 [[aws]]
-name="ascension-dev"
+name="default"
 source="ENVIRONMENT_VARIABLES"
-profile="ascension-dev"
+profile="default"
 
 [sqlite]
   file = "komiser.db"
