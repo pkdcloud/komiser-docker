@@ -1,1 +1,4 @@
 .env
+cost_explorer_cache.json
+komiser.db
+komiser.db-journal
