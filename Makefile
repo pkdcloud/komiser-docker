@@ -2,7 +2,7 @@
 
 export AWS_DEFAULT_REGION=ap-southeast-2
 
-up: ## Start Komiser Service
+up: .env ## Start Komiser Service
 	docker compose up -d
 	@echo "\nAccess the Komiser Service here: http://localhost:3000"
 down: ## Stop Komiser Service
