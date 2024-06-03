@@ -13,19 +13,25 @@ This repository provides a minimal Docker setup to run Komiser from a scratch im
 1. Run the container:
 
    ```sh
-   make run
+   make up
    ```
 
 2. Stop the container:
 
    ```sh
-   make run
+   make down
+   ```
+
+3. Tail Logs:
+
+   ```sh
+   make logs
    ```
 
 3. Clean:
 
    ```sh
-   make run
+   make clean
    ```
 
 ## Access Service
