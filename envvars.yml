@@ -1,0 +1,19 @@
+tags:
+  - name: aws
+    desc: tag used when using aws env credentials
+
+envvars:
+  - name: AWS_ACCESS_KEY_ID
+    tags:
+      - aws
+    optional: false
+
+  - name: AWS_SECRET_ACCESS_KEY
+    tags:
+      - aws
+    optional: false
+    
+  - name: AWS_DEFAULT_REGION
+    tags:
+      - aws
+    optional: false
