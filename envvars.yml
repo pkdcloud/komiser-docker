@@ -12,8 +12,13 @@ envvars:
     tags:
       - aws
     optional: false
-    
+
   - name: AWS_DEFAULT_REGION
+    tags:
+      - aws
+    optional: false
+
+  - name: AWS_SESSION_TOKEN
     tags:
       - aws
     optional: false

@@ -10,6 +10,10 @@ This repository provides a minimal Docker setup to run Komiser from a scratch im
 
 ## Usage
 
+Current this container only targets a single account
+
+Export you AWS credentials into your environment
+
 1. Run the container:
 
    ```sh
