@@ -13,10 +13,14 @@ logs: ## Get Komiser Logs
 
 clean: ## Removes Komiser Service
 	docker compose down
-	docker rmi komiser
+	docker rmi komiser -f
+	docker volume rm komiser
+
+shell: up ## Get Shell inside running Komiser service
+	docker exec -it komiser ash
 
 .env:
-	touch .env; \
+	@touch .env; \
 	docker compose run --rm envvars validate; \
 	docker compose run --rm envvars envfile --overwrite; \
 	docker compose run --rm envvars ensure; \
